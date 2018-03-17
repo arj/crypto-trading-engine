@@ -1,0 +1,18 @@
+{
+  "name": "gdax-connector",
+  "version": "1.0.0",
+  "description": "A gdax connector the fetches current prices and announces them through a message broker.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robert Jakob",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "gdax": "^0.6.0"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}
