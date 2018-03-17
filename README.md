@@ -8,6 +8,8 @@
 
 ## Start
 Start the engine with
+
     $ cd crypto-trading-engine/
     $ docker-compose up -d --build
+
 and that's it.
