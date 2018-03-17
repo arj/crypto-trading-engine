@@ -38,8 +38,9 @@ function createWebsocketAndRun (products, channel) {
 
   const websocketCallback = (data) => {
     if (data.type === 'ticker') {
-      var msg = 'GDAX-' + data.product_id + ' ' + data.price
-      channel.publish(data.product_id, '', Buffer.from(data.price))
+      var msg = data.product_id + ' ' + data.price
+      var exchange = 'GDAX-' + data.product_id 
+      channel.publish(exchange, '', Buffer.from(data.price))
       console.debug(msg)
     }
   }
