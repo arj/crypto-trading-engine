@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  messaging:
+    image: rabbitmq
+  bookkeeper:
+    build: bookkeeper
+  database:
+    build: database
+    env_file:
+       - database.env
+  gdax_connector:
+    build: gdax_connector
+    env_file:
+       - gdax_connector.env
+  analyzer:
+    build: analyzer
